@@ -25,4 +25,9 @@ public class UserService {
           List<User> list = userDao.getAllUser();
           return new PageInfo(list);
      }
+
+     public void deleteById(int id)
+     {
+          userDao.deleteById(id);
+     }
 }
